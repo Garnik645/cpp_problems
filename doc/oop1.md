@@ -1,17 +1,17 @@
 # Tic-Tac-Toe :x: :o:
-Create a class TicTacToe which will act as a supervisor for a game.
+Create a class which will act as a supervisor for a game of TicTacToe.
 It will keep the state of the game,
-containing information about game board, whose turn it is, is game over or not.
+containing information about (3 x 3) board, whose turn it is, is game over or not.
 It will also provide basic functionality for starting the game by initializing an empty game board and
 giving first move permission to 'X'.
-And of course functionality for writing 'X' or 'O' in a given cell of the board, with checks of player order,
+And of course functionality for writing 'X' or 'O' in a given cell of the board, with checks for player order,
 board boundaries and emptiness of the cell.
 
 ***NOTE:*** Everything below is a guidance or a recommendation, not a rule.
 Any implantation of the class counts, as long as it works properly and has all main functionalities.
 
 ## Data members :package:
-* **board** - 3 x 3 matrix, which will contain current state of the game board,
+* **board** - 3 x 3 matrix, which will contain state of the game board,
 every cell of which could be empty, contain 'X' or contain 'O', for example:
 ```c++
 std::vector<std::string> board;
@@ -32,9 +32,9 @@ to make member functions the only possible way to work with the data. :lock:
 ```c++
 class TicTacToe {
     private: // hidden implementation
-        bool isValidPosition(int x, int y) {...} // check if given board cell is in (3 x 3) matrix range
-        bool isPositionEmpty(int x, int y) {...} // check if the given board cell doesn't contain 'X' or 'O'
-        bool isGameOver() {...} // check if match has ended with a draw or with a win of the players, set isOver variable to true
+        bool isValidPosition(int x, int y) {...} // check if the given board cell is in (3 x 3) matrix range
+        bool isPositionEmpty(int x, int y) {...} // check if the given board cell empty and doesn't contain an 'X' or an 'O'
+        bool isGameOver() {...} // check if the match has ended with a draw or with a win of the players, set isOver variable to true
         
     public: // interface
         void init() {...} // initialize an empty game board, before starting the game
