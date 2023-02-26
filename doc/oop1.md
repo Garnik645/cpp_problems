@@ -46,4 +46,33 @@ class TicTacToe {
 ***NOTE:*** After using `setX` or `setO`, it should be checked if the match came to its end,
 any action after that (except for `init` function) should be suspended.
 
-## Examples
+## Example
+#### main()
+```c++
+int main() {
+    TicTacToe game;
+    game.init();
+    game.printBoard();
+    game.setX(2, 2);
+    game.setO(1, 3);
+    game.setX(3, 3);
+    game.printBoard();
+    return 0;
+}
+```
+
+#### output
+```
+Game was initialized!
+Printing current state...
+|...|
+|...|
+|...|
+X set in (2, 2) cell
+O set in (1, 3) cell
+X set in (3, 3) cell
+Printing current state...
+|O.X|
+|.X.|
+|...|
+```
