@@ -1,27 +1,29 @@
 # Tic-Tac-Toe :x: :o:
-Create a class of TicTacToe which will work as a supervisor for a game.
-It will keep the current state of the game,
+Create a class of TicTacToe which will act as a supervisor for a game.
+It will keep the state of the game,
 containing information about game board, whose turn it is, is game over or not.
 It will also provide basic functionality for starting the game by initializing an empty game board and
-giving first move permission to 'X',
-functionality for writing 'X' or 'O' in a given position, with checking whose turn it is,
-board boundaries and checking if board cell is empty.
+giving first move permission to 'X'.
+And of course functionality for writing 'X' or 'O' in a given cell of the board, with checks of player order,
+board boundaries and emptiness of the cell.
 
 ***NOTE:*** Everything below is a guidance or a recommendation, not a rule.
 Any implantation of the class counts, as long as it works properly and has all main functionalities.
 
 ## Data members :package:
-* **board** - 3 x 3 matrix, which will contain current state of the game board, for example:
+* **board** - 3 x 3 matrix, which will contain current state of the game board,
+every cell of which could be empty, contain 'X' or contain 'O', for example:
 ```c++
 std::vector<std::string> board;
 ```
-* **isXsTurn** - boolean value, for providing player order, storing whose turn it is to play in a current state of the game, 'X' or 'O':
+* **isXsTurn** - boolean value, for providing player order,
+storing whose turn it is to play in a current state of the game, 'X' or 'O':
 ```c++
 bool isXsTurn;
 ```
-* **isGameOver** - boolean value, to suspend any action with the game after someone already won the current match:
+* **isGameOver** - boolean value, to suspend any action with the game after someone already won the match:
 ```c++
-bool isGameOver;
+bool isOver;
 ```
 ***NOTE:*** All the data members may be private,
 to make member functions the only possible way to work with data. :lock:
@@ -30,9 +32,9 @@ to make member functions the only possible way to work with data. :lock:
 ```c++
 class TicTacToe {
     private: // hidden implementation
-        bool isValidPosition(int x, int y) {...} // check given board cells ranges to be (3 x 3) matrix
-        bool isPositionEmpty(int x, int y) {...} // check if the given board cell contains 'X' or 'O' in it
-        bool isGameOver() {...} // check if in the current state of the game someone already won the game, set isGameOver variable to true
+        bool isValidPosition(int x, int y) {...} // to check if given board cell is in (3 x 3) matrix range
+        bool isPositionEmpty(int x, int y) {...} // to check if the given board cell contains 'X' or 'O'
+        bool isGameOver() {...} // to check if match has ended with a draw or with a win of the players, set isOver variable to true
         
     public: // interface
         void init() {...} // initialize an empty game board, before starting the game
@@ -41,7 +43,7 @@ class TicTacToe {
         void setO(int x, int y) {...} // write 'O' in a given cell (x, y), with checks for validity and emptiness of the cell
 };
 ```
-***NOTE:*** After using `setX` or `setO`, it should check if one of the players won the game,
-any action after that except for `init` function should be suspended.
+***NOTE:*** After using `setX` or `setO`, it should be checked if the match came to its end,
+any action after that (except for `init` function) should be suspended.
 
 ## Examples
