@@ -47,8 +47,7 @@ class TicTacToe {
 any action after that (except for `init` function) should be suspended.
 
 ## Example :joystick:
-### 1.
-#### Main function
+### Main function 1
 ```c++
 int main() {
     TicTacToe game;
@@ -62,7 +61,7 @@ int main() {
 }
 ```
 
-#### Possible output
+### Possible output 1
 ```
 Game was initialized!
 Printing current state...
@@ -78,8 +77,7 @@ Printing current state...
 |...|
 ```
 
-### 2.
-#### Main function
+### Main function 2
 ```c++
 int main() {
     TicTacToe game;
@@ -94,7 +92,7 @@ int main() {
 }
 ```
 
-#### Possible output
+### Possible output 2
 ```
 Game was initialized!
 Printing current state...
