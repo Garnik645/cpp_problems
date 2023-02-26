@@ -1,5 +1,5 @@
 # Tic-Tac-Toe :x: :o:
-Create a class of TicTacToe which will act as a supervisor for a game.
+Create a class TicTacToe which will act as a supervisor for a game.
 It will keep the state of the game,
 containing information about game board, whose turn it is, is game over or not.
 It will also provide basic functionality for starting the game by initializing an empty game board and
