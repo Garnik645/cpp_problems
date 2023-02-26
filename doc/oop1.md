@@ -11,7 +11,7 @@ board boundaries and emptiness of the cell.
 Any implantation of the class counts, as long as it works properly and has all main functionalities.
 
 ## Data members :package:
-* **board** - 3 x 3 matrix, which will contain state of the game board,
+* **board** - 3 x 3 matrix, which will contain the state of the game board,
 every cell of which could be empty, contain 'X' or contain 'O', for example:
 ```c++
 std::vector<std::string> board;
