@@ -46,7 +46,7 @@ class TicTacToe {
 ***NOTE:*** After using functions `setX` or `setO`, it should be checked if the match came to its end,
 any action after that (except for `init` function) should be suspended.
 
-## Example
+## Example :joystick:
 ### 1.
 #### Main function
 ```c++
