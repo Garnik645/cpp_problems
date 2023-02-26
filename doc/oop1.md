@@ -46,7 +46,7 @@ class TicTacToe {
 ***NOTE:*** After using functions `setX` or `setO`, it should be checked if the match came to its end with the function `isGameOver`,
 any action after that (except for `init` function) should be suspended.
 
-## Example :joystick:
+## Examples :game_die:
 ### Main function 1
 ```c++
 int main() {
