@@ -38,7 +38,7 @@ class TicTacToe {
         
     public: // interface
         void init() {...} // initialize an empty game board, before starting the game
-        void printBoard() {...} // print current state of the board in a console
+        void printBoard() {...} // print current state of the board
         void setX(int x, int y) {...} // write an 'X' in a given cell (x, y), with checks for validity and emptiness of the cell 
         void setO(int x, int y) {...} // write an 'O' in a given cell (x, y), with checks for validity and emptiness of the cell
 };
