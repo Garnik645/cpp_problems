@@ -1,7 +1,7 @@
 # Tic-Tac-Toe :x: :o:
 Create a class which will act as a supervisor for a game of TicTacToe.
 It will keep the state of the game,
-containing information about (3 x 3) board, whose turn it is, is game over or not.
+containing information about (3 x 3) board, player turn order, is game over or not.
 It will also provide basic functionality for starting the game by initializing an empty game board and
 giving first move permission to 'X'.
 And of course functionality for writing 'X' or 'O' in a given cell of the board, with checks for player order,
