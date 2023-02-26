@@ -10,7 +10,7 @@ board boundaries and checking if board cell is empty.
 Any implantation of the class counts, as long as it works properly and has all main functionalities. :coin:
 
 ## Data members :package:
-* **board** - 3 x 3 matrix, which will contain current state of the game, for example:
+* **board** - 3 x 3 matrix, which will contain current state of the game board, for example:
 ```c++
 std::vector<std::string> board;
 ```
@@ -23,12 +23,15 @@ to make member functions the only possible way to work with data members. :lock:
 
 ## Member functions :hammer_and_pick:
 ```c++
-private:
-    bool isValidPosition(int x, int y) {...}
-    bool isEmptyPosition(int x, int y) {...}
-public:
-    void startGame() {...}
-    void printBoard() {...}
-    void setX(int x, int y) {...}
-    void setO(int x, int y) {...}
+class TicTacToe {
+    private: // hidden implementation
+        bool isValidPosition(int x, int y) {...}
+        bool isEmptyPosition(int x, int y) {...}
+    
+    public: // interface
+        void startGame() {...}
+        void printBoard() {...}
+        void setX(int x, int y) {...}
+        void setO(int x, int y) {...}
+};
 ```
