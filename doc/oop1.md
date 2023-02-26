@@ -21,7 +21,7 @@ storing whose turn it is to play in a current state of the game, 'X' or 'O':
 ```c++
 bool isXsTurn;
 ```
-* **isGameOver** - boolean value, to suspend any action with the game after someone already won the match:
+* **isOver** - boolean value, to suspend any action with the game, after someone won the match, or it came to a draw:
 ```c++
 bool isOver;
 ```
