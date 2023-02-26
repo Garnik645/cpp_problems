@@ -7,7 +7,7 @@ giving first move permission to 'X',
 functionality for writing 'X' or 'O' in a given position, with checking whose turn it is,
 board boundaries and checking if board cell is empty.
 
-***NOTE:*** Everything below is to be a guidance or a recommendation, not a rule.
+***NOTE:*** Everything below is a guidance or a recommendation, not a rule.
 Any implantation of the class counts, as long as it works properly and has all main functionalities. :coin:
 
 ## Data members :package:
@@ -20,7 +20,7 @@ std::vector<std::string> board;
 bool isXsTurn
 ```
 ***NOTE:*** All the data members may be private,
-to make member functions the only possible way to work with data members. :lock:
+to make member functions the only possible way to work with data. :lock:
 
 ## Member functions :hammer_and_pick:
 ```c++
