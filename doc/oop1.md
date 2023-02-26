@@ -6,8 +6,8 @@ It will also provide basic functionality for starting the game by initializing a
 writing 'X' or 'O' in a given position, with checking whose turn it is,
 board boundaries and checking if board cell is empty.
 
-***NOTE:*** everything below is to be a guidance or recommendation, not a rule.
-Any implantation of the class counts, as long as it works properly. :coin:
+***NOTE:*** Everything below is to be a guidance or a recommendation, not a rule.
+Any implantation of the class counts, as long as it works properly and has all main functionalities. :coin:
 
 ## Data members :package:
 * **board** - 3 x 3 matrix, which will contain current state of the game, for example:
