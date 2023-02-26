@@ -33,7 +33,7 @@ to make member functions the only possible way to work with the data. :lock:
 class TicTacToe {
     private: // hidden implementation
         bool isValidPosition(int x, int y) {...} // check if the given board cell is in (3 x 3) matrix range
-        bool isPositionEmpty(int x, int y) {...} // check if the given board cell empty and doesn't contain an 'X' or an 'O'
+        bool isPositionEmpty(int x, int y) {...} // check if the given board cell is empty and doesn't contain an 'X' or an 'O'
         bool isGameOver() {...} // check if the match has ended with a draw or with a win of the players, set isOver variable to true
         
     public: // interface
