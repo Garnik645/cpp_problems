@@ -32,9 +32,9 @@ to make member functions the only possible way to work with the data. :lock:
 ```c++
 class TicTacToe {
     private: // hidden implementation
-        bool isValidPosition(int x, int y) {...} // to check if given board cell is in (3 x 3) matrix range
-        bool isPositionEmpty(int x, int y) {...} // to check if the given board cell contains 'X' or 'O'
-        bool isGameOver() {...} // to check if match has ended with a draw or with a win of the players, set isOver variable to true
+        bool isValidPosition(int x, int y) {...} // check if given board cell is in (3 x 3) matrix range
+        bool isPositionEmpty(int x, int y) {...} // check if the given board cell contains 'X' or 'O'
+        bool isGameOver() {...} // check if match has ended with a draw or with a win of the players, set isOver variable to true
         
     public: // interface
         void init() {...} // initialize an empty game board, before starting the game
@@ -43,7 +43,7 @@ class TicTacToe {
         void setO(int x, int y) {...} // write an 'O' in a given cell (x, y), with checks for validity and emptiness of the cell
 };
 ```
-***NOTE:*** After using functions `setX` or `setO`, it should be checked if the match came to its end,
+***NOTE:*** After using functions `setX` or `setO`, it should be checked if the match came to its end with the function `isGameOver`,
 any action after that (except for `init` function) should be suspended.
 
 ## Example :joystick:
