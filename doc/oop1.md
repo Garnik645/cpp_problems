@@ -26,7 +26,7 @@ bool isXsTurn;
 bool isOver;
 ```
 ***NOTE:*** All the data members may be private,
-to make member functions the only possible way to work with data. :lock:
+to make member functions the only possible way to work with the data. :lock:
 
 ## Member functions :hammer_and_pick:
 ```c++
@@ -39,14 +39,15 @@ class TicTacToe {
     public: // interface
         void init() {...} // initialize an empty game board, before starting the game
         void printBoard() {...} // print current state of the board in a console
-        void setX(int x, int y) {...} // write 'X' in a given cell (x, y), with checks for validity and emptiness of the cell 
-        void setO(int x, int y) {...} // write 'O' in a given cell (x, y), with checks for validity and emptiness of the cell
+        void setX(int x, int y) {...} // write an 'X' in a given cell (x, y), with checks for validity and emptiness of the cell 
+        void setO(int x, int y) {...} // write an 'O' in a given cell (x, y), with checks for validity and emptiness of the cell
 };
 ```
-***NOTE:*** After using `setX` or `setO`, it should be checked if the match came to its end,
+***NOTE:*** After using functions `setX` or `setO`, it should be checked if the match came to its end,
 any action after that (except for `init` function) should be suspended.
 
 ## Example
+### 1.
 #### Main function
 ```c++
 int main() {
@@ -73,6 +74,38 @@ O set in (1, 3) cell
 X set in (3, 3) cell
 Printing current state...
 |O.X|
+|.X.|
+|...|
+```
+
+### 2.
+#### Main function
+```c++
+int main() {
+    TicTacToe game;
+    game.init();
+    game.printBoard();
+    game.setO(1, 2);
+    game.setX(5, 9);
+    game.setX(2, 2);
+    game.setO(2, 2);
+    game.printBoard();
+    return 0;
+}
+```
+
+#### Possible output
+```
+Game was initialized!
+Printing current state...
+|...|
+|...|
+|...|
+It's not O's turn!
+Cell (5, 9) is out of range!
+X set in (2, 2) cell
+Cell (2, 2) is not empty!
+|...|
 |.X.|
 |...|
 ```
