@@ -103,6 +103,7 @@ It's not O's turn!
 Cell (5, 9) is out of range!
 X set in (2, 2) cell
 Cell (2, 2) is not empty!
+Printing current state...
 |...|
 |.X.|
 |...|
