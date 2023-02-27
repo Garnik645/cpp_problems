@@ -25,7 +25,7 @@ bool isXsTurn;
 ```c++
 bool isOver;
 ```
-***NOTE:*** All the data members may be private,
+***NOTE:*** All data members may be private,
 to make member functions the only possible way to work with the data. :lock:
 
 ## Member functions :hammer_and_pick:
