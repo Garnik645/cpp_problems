@@ -32,5 +32,6 @@ i-е из этих чисел должно быть равно итоговой 
 | 6</br>5 2<br/>5 2<br/>6 2<br/>8 2<br/>3 2<br/>12 2 | 2<br/>6.0<br/>9.872<br/>13.337<br/>12.518<br/>13.337 |
 
 <kbd>
-<img src="../img/geo1.png" alt="Example" title="Example">
+<img src="../img/geo1.png" alt="Example" title="Example"
+style="display: inline-block; margin: 0 auto; max-width: 300px">
 </kbd>
