@@ -33,5 +33,5 @@ i-е из этих чисел должно быть равно итоговой 
 
 <kbd>
 <img src="../img/geo1.png" alt="Example" title="Example"
-style="display: inline-block; margin: 0 auto; max-width: 300px">
+style="display: inline-block; margin: 0 auto; max-width: 200px">
 </kbd>
