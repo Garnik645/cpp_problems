@@ -74,6 +74,8 @@ Sort the array of Dictionaries using `std::sort()` function
 
 ### Usage Example
 ```c++
+#include <algorithm>
+
 // array allocated with new
 void foo(int *arr, int size) {
     std::sort(arr, arr + size);
