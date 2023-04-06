@@ -2,7 +2,7 @@
 В задаче запрещено использовать статический массив или вектор.
 Для создания и удаления динамических объектов использовать операторы `new` и `delete`.
 
-## Stage 1
+## 1. Main structure
 ```c++
 // class for a Dictionary
 class Dictionary {
@@ -37,7 +37,7 @@ public:
 };
 ```
 
-## Stage 2
+## 2. Dynamic array from input
 In the `int main()` function create a dynamic array of type `Dictionary` (using `new` and `delete`).
 Fill the array with given dictionaries from the input.
 
@@ -62,7 +62,7 @@ why am I still here
 in the back of my mind
 ```
 
-## Stage 3
+## 3. Sorting
 Add the following friend function inside your `Dictionary` class.
 ```c++
     // compare two dictionaries by there publication year
@@ -72,22 +72,27 @@ Add the following friend function inside your `Dictionary` class.
 Sort the array of Dictionaries using `std::sort()` function
 (before using this function you must `#include <algorithm>`)
 
-### Usage Example
+### Usage with dynamic array
 ```c++
 #include <algorithm>
 
-// array allocated with new
 void foo(int *arr, int size) {
     std::sort(arr, arr + size);
 }
 
-// standard library vector
+```
+
+### Usage with vector
+```c++
+#include <algorithm>
+#include <vector>
+
 void foo(std::vector<int> &v) {
     std::sort(v.begin(), v.end());
 }
 ```
 
-## Stage 4
+## 4. Copy & Move
 Add following member functions to your `Dictionary` class:
 
 ```c++
