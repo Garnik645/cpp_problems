@@ -1,8 +1,8 @@
-# Dictionary Problem
+# Dictionary
 В задаче запрещено использовать статический массив или вектор.
 Для создания и удаления динамических объектов использовать операторы `new` и `delete`.
 
-## 1. Main structure
+## 1. Main structure :star:
 ```c++
 // class for a Dictionary
 class Dictionary {
@@ -37,7 +37,7 @@ public:
 };
 ```
 
-## 2. Dynamic array from input
+## 2. Dynamic array from input :star: :star:
 In the `int main()` function create a dynamic array of type `Dictionary` (using `new` and `delete`).
 Fill the array with given dictionaries from the input.
 
@@ -62,7 +62,7 @@ why am I still here
 in the back of my mind
 ```
 
-## 3. Sorting
+## 3. Sorting :star: :star: :star:
 Add the following friend function inside your `Dictionary` class.
 This will allow you to use standard library sorting algorithm with your array of dictionaries.
 ```c++
@@ -93,7 +93,22 @@ void foo(std::vector<int> &v) {
 }
 ```
 
-## 4. Copy & Move
+## 4. Find first occurrence :star: :star: :star: :star:
+Let's say you have the following word:
+```c++
+std::string myWord = "computer";
+```
+
+And you have to find the first occurrence of this word in the dictionaries you have. 
+Write a function outside your class.
+For that write the following function outside your class:
+```c++
+// return pointer to the first dictionary in the array to contain the given word
+// return nullptr if not found
+Dictionary *findFirstOccurrence(Dictionary *dicts, int dictsSize, const std::string &word);
+```
+
+## 5. Copy & Move :star: :star: :star: :star: :star:
 Add the following member functions to your `Dictionary` class:
 
 ```c++
