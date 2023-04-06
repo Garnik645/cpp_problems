@@ -3,6 +3,11 @@ In this problem it is forbidden to use static arrays or vectors.
 For creating and deleting dynamic arrays you should use operators `new` and `delete`.
 
 ## 1. Main structure :star:
+Write a dictionary class, which will act as a dictionary book.
+Every dictionary will have a publication year and an array of words.
+It will also have some basic functionality to interact with objects of this type.
+
+Member functions which should be implemented are provided below:
 ```c++
 // class for a Dictionary
 class Dictionary {
@@ -38,7 +43,7 @@ public:
 ```
 
 ## 2. Dynamic array from input :star::star:
-In the `int main()` function create a dynamic array of type `Dictionary` (using `new` and `delete`).
+In the `int main()` function create a dynamic array (using `new` and `delete`) with elements of type `Dictionary`.
 Fill the array with given dictionaries from the input.
 
 ### Input Format:
@@ -50,16 +55,19 @@ Then your given **N** blocks of input.
 * **W<sub>1</sub>**, **W<sub>2</sub>**, ..., **W<sub>M<sub>i</sub></sub>** - words in the **i**-th dictionary
 ### Input Example:
 ```
-3
+4
 
 1917 6
-it feels like you dont care
+automatic machine keyboard computer intstrument artifical
 
-1832 5
-why am I still here
+1822 5
+arithmetic human computer automatic etymology
 
-2012 6
-in the back of my mind
+1798 4
+submarine branching entropy engine
+
+2012 5
+digital virtual conditional device electric
 ```
 
 ## 3. Sorting :star::star::star:
