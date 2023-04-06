@@ -37,7 +37,7 @@ public:
 };
 ```
 
-## 2. Dynamic array from input :star: :star:
+## 2. Dynamic array from input :star::star:
 In the `int main()` function create a dynamic array of type `Dictionary` (using `new` and `delete`).
 Fill the array with given dictionaries from the input.
 
@@ -62,7 +62,7 @@ why am I still here
 in the back of my mind
 ```
 
-## 3. Sorting :star: :star: :star:
+## 3. Sorting :star::star::star:
 Add the following friend function inside your `Dictionary` class.
 This will allow you to use standard library sorting algorithm with your array of dictionaries.
 ```c++
