@@ -3,9 +3,9 @@ In this problem it is forbidden to use static arrays or vectors.
 For creating and deleting dynamic arrays you should use operators `new` and `delete`.
 
 ## 1. Main structure :star:
-Write a dictionary class, which will act as a dictionary book.
+Write a class for a dictionary book.
 Every dictionary will have a publication year and an array of words.
-It will also have some basic functionality to interact with objects of this type.
+It will also have some basic functionality for interacting with objects of this type.
 
 Member functions which should be implemented are provided below:
 ```c++
@@ -74,11 +74,11 @@ digital virtual conditional device electric
 Add the following friend function inside your `Dictionary` class.
 This will allow you to use standard library sorting algorithm with your array of dictionaries.
 ```c++
-    // compare two dictionaries by there publication year
-    friend bool operator<(const Dictionary &lhs, const Dictionary &rhs);
+// compare two dictionaries by there publication year
+friend bool operator<(const Dictionary &lhs, const Dictionary &rhs);
 ```
 
-Sort the array of Dictionaries using `std::sort()` function
+Sort the array of dictionaries using `std::sort()` function
 (before using this function you must `#include <algorithm>`)
 
 ### Usage with dynamic array
