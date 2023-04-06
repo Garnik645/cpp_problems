@@ -94,7 +94,7 @@ void foo(std::vector<int> &v) {
 ```
 
 ## 4. Copy & Move
-Add following member functions to your `Dictionary` class:
+Add the following member functions to your `Dictionary` class:
 
 ```c++
     // copy constructor
