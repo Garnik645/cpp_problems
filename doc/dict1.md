@@ -93,7 +93,7 @@ void foo(std::vector<int> &v) {
 }
 ```
 
-## 4. Find first occurrence :star: :star: :star: :star:
+## 4. Find first occurrence :star::star::star::star:
 Let's say you have the following word:
 ```c++
 std::string myWord = "computer";
@@ -108,7 +108,7 @@ For that write the following function outside your class:
 Dictionary *findFirstOccurrence(Dictionary *dicts, int dictsSize, const std::string &word);
 ```
 
-## 5. Copy & Move :star: :star: :star: :star: :star:
+## 5. Copy & Move :star::star::star::star::star:
 Add the following member functions to your `Dictionary` class:
 
 ```c++
