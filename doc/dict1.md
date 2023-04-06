@@ -2,7 +2,7 @@
 In this problem it is forbidden to use static arrays or vectors.
 For creating and deleting dynamic arrays you should use operators `new` and `delete`.
 
-## 1. Main structure :star:
+## 1. Main structure
 Write a class for a dictionary book.
 Every dictionary will have a publication year and an array of words.
 It will also have some basic functionality for interacting with objects of this type.
@@ -42,7 +42,7 @@ public:
 };
 ```
 
-## 2. Dynamic array from input :star::star:
+## 2. Dynamic array from input
 In the `int main()` function create a dynamic array (using `new` and `delete`) with elements of type `Dictionary`.
 Fill the array with given dictionaries from the input.
 
@@ -70,7 +70,7 @@ submarine branching entropy engine
 digital virtual conditional device electric
 ```
 
-## 3. Sorting :star::star::star:
+## 3. Sorting
 Add the following friend function inside your `Dictionary` class.
 This will allow you to use standard library sorting algorithm with your array of dictionaries.
 ```c++
@@ -101,7 +101,7 @@ void foo(std::vector<int> &v) {
 }
 ```
 
-## 4. Find first occurrence :star::star::star::star:
+## 4. Find first occurrence
 Let's say you have the following word:
 ```c++
 std::string myWord = "computer";
@@ -115,7 +115,7 @@ For that write a function outside your class:
 Dictionary *findFirstOccurrence(Dictionary *dicts, int dictsSize, const std::string &word);
 ```
 
-## 5. Copy & Move :star::star::star::star::star:
+## 5. Copy & Move
 Add the following member functions to your `Dictionary` class:
 ```c++
     // copy constructor
