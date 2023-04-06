@@ -64,6 +64,7 @@ in the back of my mind
 
 ## 3. Sorting
 Add the following friend function inside your `Dictionary` class.
+This will allow you to use standard library sorting algorithm with your array of dictionaries.
 ```c++
     // compare two dictionaries by there publication year
     friend bool operator<(const Dictionary &lhs, const Dictionary &rhs);
