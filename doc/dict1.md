@@ -1,6 +1,6 @@
 # Dictionary
-В задаче запрещено использовать статический массив или вектор.
-Для создания и удаления динамических объектов использовать операторы `new` и `delete`.
+In this problem it is forbidden to use static arrays or vectors.
+For creating and deleting dynamic arrays you should use operators `new` and `delete`.
 
 ## 1. Main structure :star:
 ```c++
@@ -100,17 +100,15 @@ std::string myWord = "computer";
 ```
 
 And you have to find the first occurrence of this word in the dictionaries you have. 
-Write a function outside your class.
-For that write the following function outside your class:
+For that write a function outside your class:
 ```c++
 // return pointer to the first dictionary in the array to contain the given word
-// return nullptr if not found
+// return nullptr if no such word was found in any dictionary
 Dictionary *findFirstOccurrence(Dictionary *dicts, int dictsSize, const std::string &word);
 ```
 
 ## 5. Copy & Move :star::star::star::star::star:
 Add the following member functions to your `Dictionary` class:
-
 ```c++
     // copy constructor
     Dictionary(const Dictionary &other);
