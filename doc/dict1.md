@@ -4,7 +4,7 @@
 
 ## Stage 1
 ```c++
-// class for a Dictionary as a book containing array of words
+// class for a Dictionary
 class Dictionary {
     // pointer to array of words in a dictionary
     std::string *words;
@@ -39,12 +39,12 @@ public:
 
 ## Stage 2
 In the `int main()` function create a dynamic array of type `Dictionary` (using `new` and `delete`).
-Fill the array with given Dictionaries from the input.
+Fill the array with given dictionaries from the input.
 
 ### Input Format:
 First your given an integer number **N**, number of dictionaries.
 Then your given **N** blocks of input.
-**i**-th block of input corresponds to **i**-th `Dicitionary`, which contains:
+**i**-th block of input corresponds to **i**-th `Dicitionary` in the array, which has the following structure:
 * **Y<sub>i</sub>** - integer, year of the publication of the **i**-th dictionary.
 * **M<sub>i</sub>** - integer, number of words in the **i**-th dictionary,
 * **W<sub>1</sub>**, **W<sub>2</sub>**, ..., **W<sub>M<sub>i</sub></sub>** - words in the **i**-th dictionary
@@ -70,7 +70,20 @@ Add the following friend function inside your `Dictionary` class.
 ```
 
 Sort the array of Dictionaries using `std::sort()` function
-(before using sort function you must `#include <algorithm>`)
+(before using this function you must `#include <algorithm>`)
+
+### Usage Example
+```c++
+// array allocated with new
+void foo(int *arr, int size) {
+    std::sort(arr, arr + size);
+}
+
+// standard library vector
+void foo(std::vector<int> &v) {
+    std::sort(v.begin(), v.end());
+}
+```
 
 ## Stage 4
 Add following member functions to your `Dictionary` class:
