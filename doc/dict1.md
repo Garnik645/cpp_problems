@@ -38,7 +38,7 @@ public:
 ```
 
 ## Stage 2
-In the ```c++ int main()``` function create a dynamic array of type `Dictionary` (using `new` and `delete`).
+In the `int main()` function create a dynamic array of type `Dictionary` (using `new` and `delete`).
 Fill the array with given Dictionaries from the input.
 
 ### Input Format:
@@ -69,8 +69,8 @@ Add the following friend function inside your `Dictionary` class.
     friend bool operator<(const Dictionary &lhs, const Dictionary &rhs);
 ```
 
-Sort the array of Dictionaries using ```c++ std::sort()``` function
-(before using sort function you must ```c++ #include <algorithm>```)
+Sort the array of Dictionaries using `std::sort()` function
+(before using sort function you must `#include <algorithm>`)
 
 ## Stage 4
 Add following member functions to your `Dictionary` class:
