@@ -116,7 +116,7 @@ Dictionary *findFirstOccurrence(Dictionary *dicts, int dictsSize, const std::str
 ```
 
 ## 5. Copy & Move
-Add the following member functions to your `Dictionary` class:
+Add the following special member functions to your `Dictionary` class:
 ```c++
     // copy constructor
     Dictionary(const Dictionary &other);
