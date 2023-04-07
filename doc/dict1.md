@@ -43,11 +43,11 @@ public:
 ```
 
 ## 2. Dynamic array from input
-In the `int main()` function create a dynamic array (using `new` and `delete`) with elements of type `Dictionary`.
+In `int main()` function create a dynamic array (using `new` and `delete`) with elements of type `Dictionary`.
 Fill the array with given dictionaries from the input.
 
 ### Input Format:
-First your given an integer number **N**, number of dictionaries.
+First you're given an integer number **N**, number of dictionaries.
 Then your given **N** blocks of input.
 **i**-th block of input corresponds to **i**-th `Dicitionary` in the array, which has the following structure:
 * **Y<sub>i</sub>** - integer, year of the publication of the **i**-th dictionary.
