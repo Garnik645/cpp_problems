@@ -24,7 +24,7 @@ private:
 
 ## 2. Get & Set
 Add following functions:
-* `opeartor[]` for reading from bitset
+* `operator[]` for reading from bitset
 * `setValue` for writing into bitset
 ```c++
   bool operator[](size_t index);
