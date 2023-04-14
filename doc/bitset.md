@@ -1,6 +1,6 @@
 # Bitset
 
-## Main structure
+## 1. Main structure
 Implement main functionality:
 * data members
 * constructors
@@ -33,7 +33,7 @@ Add following functions:
 ```
 
 ## 3. Copy & Move
-Add construction and assignment special member functions
+Add member functions for construction and assignment
 ```c++
   Bitset(const Bitset &set);
   Bitset(Bitset &&set);
