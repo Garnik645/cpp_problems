@@ -218,3 +218,5 @@ int main() {
 a << 2: 101000
 a >> 2: 000110
 ```
+
+***NOTE:*** don't forget to test and debug everything you wrote.
