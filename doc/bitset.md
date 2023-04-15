@@ -52,7 +52,7 @@ private:
 };
 ```
 
-***NOTE:*** class should not allocate more than `(count + 7) / 8` bytes of memory. :shushing_face:
+***NOTE:*** constructor should not allocate more than `(count + 7) / 8` bytes of memory. :shushing_face:
 
 ### Example
 ```c++
