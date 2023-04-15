@@ -90,9 +90,31 @@ int main() {
 Bitset: 001000011010
 ```
 
+## 4. String constructor
+Add a constructor so that Bitsets can be converted from strings:
+```c++
+  explicit Bitset(const std::string &str);
+```
 
-## 4. Copy & Move
-Add member functions for construction and assignment
+### Example
+```c++
+int main() {
+  Bitset bset("01101110");
+  std::cout << "Bitset before: " << bset << '\n';
+  bset.setValue(0, true);
+  bset.setValue(4, true);
+  std::cout << "Bitset after:  " << bset << '\n';
+}
+```
+
+#### Console output:
+```
+Bitset before: 01101110
+Bitset after:  01111111
+```
+
+## 5. Copy & Move
+Add member functions for construction and assignment:
 ```c++
   Bitset(const Bitset &set);
   Bitset(Bitset &&set);
@@ -101,7 +123,30 @@ Add member functions for construction and assignment
   Bitset &operator=(Bitset &&set);
 ```
 
-## 5. Bitwise operators
+### Example
+```c++
+int main() {
+  Bitset bset1("00110");
+  Bitset bset2(bset1);
+  std::cout << "Bitset1: " << bset1 << '\n';
+  std::cout << "Bitset2: " << bset2 << '\n';
+  std::cout << '\n';
+  bset1.setValue(0, true);
+  std::cout << "Bitset1: " << bset1 << '\n';
+  std::cout << "Bitset2: " << bset2 << '\n';
+}
+```
+
+#### Console output:
+```
+Bitset1: 00110
+Bitset2: 00110
+
+Bitset1: 00111
+Bitset2: 00110
+```
+
+## 6. Bitwise operators
 Overload bitwise operators
 ```c++
   friend Bitset operator&(const Bitset &lhs, const Bitset &rhs);
