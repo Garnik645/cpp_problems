@@ -2,13 +2,19 @@
 A bitset is a data structure that stores multiple boolean values but takes lesser memory space as compared to other data structures
 that can store a sequence of bits like a boolean array or boolean vector.
 Bitsets are often used for modeling subsets of some set.
+
+
 Let's say we have a set of all the digits {0, 1, 2, 3, ..., 9}.
 Any subset of this set can be represented by a bitset of 10 bits.
-For example subset {0, 2, 3, 8} could be represented like this [0100001101].
-We sat **i**-th bit to 1 if digit **i** is present in the subset.
+For example subset {0, 2, 3, 8} could be represented like [0100001101].
+**i**-th bit of the bitset is 1, if digit **i** is present in the subset,
+and is 0 if **i** is not present in the subset.
 ```
 [0100001101] <-> {0, 2, 3, 8}
+[0000100110] <-> {1, 2, 5}
+[0111001100] <-> {2, 3, 6, 7, 8}
 ```
+
 
 The class bitset represents a fixed-size sequence of N bits.
 Bitsets can be manipulated by standard logic operators and constructed from strings and integers.
