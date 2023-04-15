@@ -3,19 +3,6 @@ A bitset is a data structure that stores multiple boolean values but takes lesse
 that can store a sequence of bits like a boolean array or boolean vector.
 
 
-Bitsets are often used for modeling subsets of some set.
-Let's say we have a set of all the digits {0, 1, 2, 3, ..., 9}.
-Any subset of this set can be represented by a bitset of 10 bits.
-For example subset {0, 2, 3, 8} could be represented like [0100001101].
-**i**-th bit of the bitset is 1, if digit **i** is present in the subset,
-and is 0 if **i** is not present in the subset.
-```
-[0100001101] <-> {0, 2, 3, 8}
-[0000100110] <-> {1, 2, 5}
-[0111001100] <-> {2, 3, 6, 7, 8}
-```
-
-
 The class bitset represents a fixed-size sequence of N bits.
 Bitsets can be manipulated by standard logic operators and constructed from strings and integers.
 ```c++
@@ -28,6 +15,19 @@ The class emulates an array of bool elements, but optimized for space allocation
 each element occupies only one bit by using array of type char instead of type bool.
 Indexing of elements in a bitset is reverse (from right to left).
 Let’s take an example, for bitset [01101001]. 0’s are at index 1, 2, 4, 7. And 1’s are at index 0, 3, 5, 6.
+
+## Use cases
+Bitsets are often used for modeling subsets of some set.
+Let's say we have a set of all the digits {0, 1, 2, 3, ..., 9}.
+Any subset of this set can be represented by a bitset of 10 bits.
+For example subset {0, 2, 3, 8} could be represented like [0100001101].
+**X**-th bit of the bitset is set to 1 if digit **X** is present in the subset,
+and **X**-th bit is set to 0 if digit **X** is not present in the subset.
+```
+[0100001101] <-> {0, 2, 3, 8}
+[0000100110] <-> {1, 2, 5}
+[0111001100] <-> {2, 3, 6, 7, 8}
+```
 
 ## 1. Main structure
 Implement constructor and destructor:
