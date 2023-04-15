@@ -70,7 +70,7 @@ Add following functions:
   // set the bit with index to 'value'
   void setValue(size_t index, bool value);
 ```
-***NOTE:*** elements are indexed starting from 0, from right to left.
+***NOTE:*** elements are indexed starting from 0, from right to left. :monocle_face:
 
 ### Example
 ```c++
@@ -175,7 +175,7 @@ Overload bitwise operators:
   Bitset operator~();
 ```
 
-***NOTE:*** operators &, |, ^ are defined only for bitsets of the same size.
+***NOTE:*** operators &, |, ^ are defined only for bitsets of the same size. :hushed:
 
 ### Example
 ```c++
@@ -219,4 +219,4 @@ a << 2: 101000
 a >> 2: 000110
 ```
 
-***NOTE:*** don't forget to test and debug everything you wrote.
+***NOTE:*** don't forget to test and debug everything you wrote. :relieved:	
