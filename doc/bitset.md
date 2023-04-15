@@ -1,4 +1,6 @@
 # Bitset
+A bitset is a dataset that stores multiple boolean values but takes lesser memory space as compared to other data sets
+that can store a sequence of bits like a boolean array or boolean vector.
 The class bitset represents a fixed-size sequence of N bits.
 Bitsets can be manipulated by standard logic operators and converted from strings and integers.
 ```c++
@@ -9,6 +11,8 @@ Bitsets can be manipulated by standard logic operators and converted from string
 A bitset stores bits (elements with only two possible values: 0 or 1, true or false, ...).
 The class emulates an array of bool elements, but optimized for space allocation:
 each element occupies only one bit by using array of type char instead of type bool.
+Indexing of elements in a bitset is reverse (from right to left).
+Let’s take an example, for bitset [01101001]. 0’s are at index 1, 2, 4, 7. And 1’s are at index 0, 3, 5, 6.
 
 ## 1. Main structure
 Implement constructor and destructor:
