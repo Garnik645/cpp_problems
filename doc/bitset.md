@@ -1,9 +1,9 @@
 # Bitset
 A bitset is a data structure that stores multiple boolean values but takes lesser memory space as compared to other data structures
 that can store a sequence of bits like a boolean array or boolean vector.
+
+
 Bitsets are often used for modeling subsets of some set.
-
-
 Let's say we have a set of all the digits {0, 1, 2, 3, ..., 9}.
 Any subset of this set can be represented by a bitset of 10 bits.
 For example subset {0, 2, 3, 8} could be represented like [0100001101].
