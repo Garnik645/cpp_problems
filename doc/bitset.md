@@ -8,7 +8,7 @@ Bitsets can be manipulated by standard logic operators and converted from string
 ```
 A bitset stores bits (elements with only two possible values: 0 or 1, true or false, ...).
 The class emulates an array of bool elements, but optimized for space allocation:
-generally, each element occupies only one bit by using array of type char instead of type bool.
+each element occupies only one bit by using array of type char instead of type bool.
 
 ## 1. Main structure
 Implement constructor and destructor:
