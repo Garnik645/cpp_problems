@@ -1,5 +1,5 @@
 # Bitset
-The class template bitset represents a fixed-size sequence of N bits.
+The class bitset represents a fixed-size sequence of N bits.
 Bitsets can be manipulated by standard logic operators and converted from strings and integers.
 ```c++
   int N;
@@ -51,6 +51,7 @@ Add following functions:
   // set the bit with index to 'value'
   void setValue(size_t index, bool value);
 ```
+***NOTE:*** elements are indexed starting from 0.
 
 ### Example
 ```c++
@@ -66,7 +67,31 @@ Add following functions:
   bool flag = bset[3] // bset[3] will return true
 ```
 
-## 3. Copy & Move
+## 3. Console output
+Overload `opeartor<<` for writing into console using `std::cout`
+```c++
+  friend std::ostream &operator<<(std::ostream &os, const Bitset &set);
+```
+
+### Example
+```c++
+int main() {
+  Bitset bset(12);
+  bset.setValue(1, true);
+  bset.setValue(3, true);
+  bset.setValue(4, true);
+  bset.setValue(9, true);
+  std::cout << "Bitset: " << bset << '\n'; 
+}
+```
+
+#### Console output:
+```
+Bitset: 001000011010
+```
+
+
+## 4. Copy & Move
 Add member functions for construction and assignment
 ```c++
   Bitset(const Bitset &set);
@@ -74,12 +99,6 @@ Add member functions for construction and assignment
 
   Bitset &operator=(const Bitset &set);
   Bitset &operator=(Bitset &&set);
-```
-
-## 4. Console output
-Overload `opeartor<<` for writing into console using `std::cout`
-```c++
-  friend std::ostream &operator<<(std::ostream &os, const Bitset &set);
 ```
 
 ## 5. Bitwise operators
