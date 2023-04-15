@@ -1,10 +1,14 @@
 # Bitset
+The class template bitset represents a fixed-size sequence of N bits.
+Bitsets can be manipulated by standard logic operators and converted from strings and integers.
+```c++
+int N;
+std::cin >> N;
+Bitset set(N);
+```
 
 ## 1. Main structure
-Implement main functionality:
-* data members
-* constructors
-* destructor
+Implement constructor and destructor:
 ```c++
 #include <iostream>
 #include <cstddef>
@@ -12,7 +16,6 @@ Implement main functionality:
 class Bitset {
 public:
   explicit Bitset(size_t count);
-  explicit Bitset(const std::string &str);
 
   ~Bitset();
 
