@@ -70,7 +70,7 @@ Add following functions:
   // set the bit with index to 'value'
   void setValue(size_t index, bool value);
 ```
-***NOTE:*** elements are indexed starting from 0.
+***NOTE:*** elements are indexed starting from 0, from right to left.
 
 ### Example
 ```c++
