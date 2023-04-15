@@ -156,6 +156,8 @@ Overload bitwise operators:
   Bitset operator~();
 ```
 
+***NOTE:*** operators &, |, ^ are defined only for bitsets of the same size.
+
 ### Example
 ```c++
 int main() {
