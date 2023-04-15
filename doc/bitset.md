@@ -147,14 +147,53 @@ Bitset2: 00110
 ```
 
 ## 6. Bitwise operators
-Overload bitwise operators
+Overload bitwise operators:
 ```c++
   friend Bitset operator&(const Bitset &lhs, const Bitset &rhs);
   friend Bitset operator|(const Bitset &lhs, const Bitset &rhs);
   friend Bitset operator^(const Bitset &lhs, const Bitset &rhs);
-
-  friend Bitset operator<<(const Bitset &lhs, unsigned int shift);
-  friend Bitset operator>>(const Bitset &rhs, unsigned int shift);
   
   Bitset operator~();
+```
+
+### Example
+```c++
+int main() {
+  Bitset a("1100");
+  Bitset b("0101");
+  std::cout << "a & b: " << (a & b) << '\n';
+  std::cout << "a | b: " << (a | b) << '\n';
+  std::cout << "a ^ b: " << (a ^ b) << '\n';
+  std::cout << "~a: " << (~a) << '\n';
+}
+```
+
+#### Console output:
+```
+  a & b: 0100
+  a | b: 1101
+  a ^ b: 1001
+  ~a: 0011
+```
+
+## 7. Shift
+Overload shift operators:
+```c++
+  friend Bitset operator<<(const Bitset &lhs, unsigned int shift);
+  friend Bitset operator>>(const Bitset &rhs, unsigned int shift);
+```
+
+### Example
+```c++
+int main() {
+  Bitset a("011010");
+  std::cout << "a << 2: " << (a << 2) << '\n';
+  std::cout << "a >> 2: " << (a >> 2) << '\n';
+}
+```
+
+#### Console output:
+```
+a << 2: 101000
+a >> 2: 000110
 ```
