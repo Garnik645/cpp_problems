@@ -1,13 +1,13 @@
 #include <iostream>
 
 struct Base {
-  void f() {
+  virtual void f() {
     std::cout << "Base\n";
   }
 };
 
 struct Derived : Base {
-  void f() {
+  void f() override {
     std::cout << "Derived\n";
   }
 };
