@@ -12,8 +12,7 @@ struct Base2 {
   }
 };
 
-struct Derived : Base1, Base2 {
-};
+struct Derived : Base1, Base2 {};
 
 int main() {
   Derived d;
