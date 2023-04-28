@@ -1,23 +1,24 @@
 #include <iostream>
 
-struct Shape {
-  virtual void printShape() = 0;
-};
-
-struct Triangle : Shape {
-  void printShape() override {
-    std::cout << "Triangle\n";
+struct Base {
+  Base() {
+    std::cout << "Base()\n";
+  }
+  ~Base() {
+    std::cout << "~Base()\n";
   }
 };
 
-struct Rectangle : Shape {
-  void printShape() override {
-    std::cout << "Rectangle\n";
+struct Derived : Base {
+  Derived() {
+    std::cout << "Derived()\n";
+  }
+  ~Derived() {
+    std::cout << "~Derived()\n";
   }
 };
 
 int main() {
-  Rectangle r;
-  Shape &s = r;
-  s.printShape();
+  Base *ptr = new Derived();
+  delete ptr;
 }
