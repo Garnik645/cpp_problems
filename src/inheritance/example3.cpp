@@ -1,24 +1,20 @@
 #include <iostream>
 
-struct Base {
-  virtual void f() {
-    std::cout << "Base\n";
+struct Base1 {
+  void f() {
+    std::cout << "Base1\n";
   }
 };
 
-struct Derived : Base {
-  void f() override {
-    std::cout << "Derived\n";
+struct Base2 {
+  void f() {
+    std::cout << "Base2\n";
   }
 };
+
+struct Derived : Base1, Base2 {};
 
 int main() {
-  Base b;
-  b.f();
-
   Derived d;
   d.f();
-
-  Base &ref = d;
-  ref.f();
 }

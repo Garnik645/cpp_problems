@@ -1,20 +1,17 @@
 #include <iostream>
 
-struct Base1 {
-  void f() {
-    std::cout << "Base1\n";
+struct Base {
+  Base(int y) {
+    std::cout << "Base " << y << "\n";
   }
 };
 
-struct Base2 {
-  void f() {
-    std::cout << "Base2\n";
+struct Derived : Base {
+  Derived(int x, int y) : Base(y) {
+    std::cout << "Derived " << x << "\n";
   }
 };
-
-struct Derived : Base1, Base2 {};
 
 int main() {
-  Derived d;
-  d.f();
+  Derived d(5, 3);
 }

@@ -1,24 +1,24 @@
 #include <iostream>
 
 struct Base {
-  Base() {
-    std::cout << "Base()\n";
-  }
-  ~Base() {
-    std::cout << "~Base()\n";
+  virtual void f() {
+    std::cout << "Base\n";
   }
 };
 
 struct Derived : Base {
-  Derived() {
-    std::cout << "Derived()\n";
-  }
-  ~Derived() {
-    std::cout << "~Derived()\n";
+  void f() override {
+    std::cout << "Derived\n";
   }
 };
 
 int main() {
-  Base *ptr = new Derived();
-  delete ptr;
+  Base b;
+  b.f();
+
+  Derived d;
+  d.f();
+
+  Base &ref = d;
+  ref.f();
 }
