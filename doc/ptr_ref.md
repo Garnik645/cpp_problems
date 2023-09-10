@@ -1,4 +1,64 @@
 # What is the output of this program?
+## 1
+```c++
+#include <iostream>
+
+int main() {
+  int x = 50;
+  int* ptr = &x;
+    
+  std::cout << *ptr;
+  return 0;
+}
+```
+
+## 2
+```c++
+#include <iostream>
+
+int main() {
+  int x = 40;
+  int* ptr1 = &x;
+  int** ptr2 = &ptr1;
+
+  std::cout << "x = " << **ptr2 << std::endl;
+  return 0;
+}
+```
+
+## 3
+```c++
+#include <iostream>
+
+int* CreateAndInitArray(int size, int initialValue) {
+  int* arr = new int[size];
+  for (int i = 0; i < size; ++i) {
+    arr[i] = i * initialValue;
+  }
+  return arr;
+}
+
+void DoubleValue(int* ptr) {
+  *ptr *= 2;
+}
+
+int main() {
+  int* newArray = CreateAndInitArray(3, 10);
+    
+  for (int i = 0; i < 3; ++i) {
+    DoubleValue(newArray + i);
+  }
+
+  int* ptr = newArray;
+  ++ptr;
+
+  std::cout << *ptr << std::endl;
+  delete[] newArray;
+  return 0;
+}
+```
+
+## 5
 ```c++
 #include <iostream>
 
