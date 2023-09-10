@@ -1,18 +1,6 @@
 # What is the output of this program?
+
 ## 1
-```c++
-#include <iostream>
-
-int main() {
-  int x = 50;
-  int* ptr = &x;
-    
-  std::cout << *ptr;
-  return 0;
-}
-```
-
-## 2
 ```c++
 #include <iostream>
 
@@ -26,7 +14,7 @@ int main() {
 }
 ```
 
-## 3
+## 2
 ```c++
 #include <iostream>
 
