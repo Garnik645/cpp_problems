@@ -42,8 +42,16 @@ void DoubleValue(int* ptr) {
   *ptr *= 2;
 }
 
+void SwapArrays(int* arr1, int* arr2) {
+  int* tmp = arr1;
+  arr1 = arr2;
+  arr2 = tmp;
+}
+
 int main() {
+  int* oldArray = CreateAndInitArray(3, 20);
   int* newArray = CreateAndInitArray(3, 10);
+  SwapArrays(oldArray, newArray);
     
   for (int i = 0; i < 3; ++i) {
     DoubleValue(newArray + i);
@@ -53,12 +61,13 @@ int main() {
   ++ptr;
 
   std::cout << *ptr << std::endl;
+  delete[] oldArray;
   delete[] newArray;
   return 0;
 }
 ```
 
-## 5
+## 4
 ```c++
 #include <iostream>
 
