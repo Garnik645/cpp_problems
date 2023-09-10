@@ -8,8 +8,9 @@ int main() {
   int x = 40;
   int* ptr1 = &x;
   int** ptr2 = &ptr1;
+  int**& ptr3 = ptr2;
 
-  std::cout << **ptr2 << std::endl;
+  std::cout << **ptr3 << std::endl;
   return 0;
 }
 ```
