@@ -9,7 +9,7 @@ int main() {
   int* ptr1 = &x;
   int** ptr2 = &ptr1;
 
-  std::cout << "x = " << **ptr2 << std::endl;
+  std::cout << **ptr2 << std::endl;
   return 0;
 }
 ```
