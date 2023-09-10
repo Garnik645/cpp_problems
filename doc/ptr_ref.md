@@ -55,18 +55,50 @@ int main() {
 }
 ```
 
+## 3
+```c++
+#include <iostream>
+
+void addValue(int &lhs, int rhs) {
+  lhs += rhs;
+}
+
+int *otherValue(int *new_ptr) {
+  new_ptr = new int(10);
+  addValue(*new_ptr, 20);
+  return new_ptr;
+}
+
+void changeValue(int *ptr) {
+  int &x = *ptr;
+  int *y = otherValue(&x);
+  x *= *y;
+  delete y;
+}
+
+int main() {
+  int n;
+  int &m = n;
+  m = 10;
+  addValue(n, 10);
+  changeValue(&m);
+  std::cout << n << std::endl;
+  return 0;
+}
+```
+
 ## 4
 ```c++
 #include <iostream>
 
-void modifyValue(int v, int a) {
-  v += a;
+void addValue(int lhs, int rhs) {
+  lhs += rhs;
 }
 
 int *getValue(int *myptr, int c) {
   myptr = new int[3]{3, 4, 5};
   int &ref = *(myptr + 2);
-  modifyValue(ref, c);
+  addValue(ref, c);
   int *b = new int();
   *b = myptr[2];
   delete[] myptr;
