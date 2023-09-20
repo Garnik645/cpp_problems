@@ -1,6 +1,6 @@
 # Задачи с использованием std::vector, std::string
 Все следующие задачи должны быть решены с исползованием **std::vector** и **std::string** из стандартной библиотеки.
-Тут можно посмотреть описание функций [std::vector](https://en.cppreference.com/w/cpp/container/vector) и [std::string](https://en.cppreference.com/w/cpp/string/basic_string).
+Тут можно посмотреть описание структур [std::vector](https://en.cppreference.com/w/cpp/container/vector) и [std::string](https://en.cppreference.com/w/cpp/string/basic_string).
 
 ## Задача 1
 Написать функцию, которая как аргумент получает последовательность символов.
@@ -10,7 +10,7 @@
 
 ## Задача 2
 Написать функцию, которая как аргумент получает последовательность слов (типа **std::vector\<std::string\>**),
-и меняет первую букву каждого слова на заглавную.
+и меняет первую букву каждого слова на заглавную. Функция ничего не возвращает.
 
 ## Задача 3
 Написать функцию, которая возвращает:
@@ -26,5 +26,9 @@
 std::vector<int> getRangeSum(const std::vector<int> &vec, const std::vector<std::pair<size_t, size_t>> &queries);
 ```
 Каждый запрос - это структура типа **std::pair\<size_t, size_t\> query;** (Про **std::pair** можно почитать [тут](https://en.cppreference.com/w/cpp/utility/pair)).
+
 Для каждого запроса **query**, найти сумму элементов из **vec** из отрезка **\[query.first, query.second\)**.
 Функция возвращает последовательность этих сумм.
+
+## Задача 5
+[тут](https://www.hackerrank.com/challenges/hackerland-radio-transmitters/problem?isFullScreen=true).
