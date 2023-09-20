@@ -30,5 +30,7 @@ std::vector<int> getRangeSum(const std::vector<int> &vec, const std::vector<std:
 Для каждого запроса **query**, найти сумму элементов из **vec** из отрезка **\[query.first, query.second\)**.
 Функция возвращает последовательность этих сумм.
 
+***Ограничение:*** Сложность алгоритма должна быть не хуже чем **O(vec.size() + queries.size())**
+
 ## Задача 5
 [тут](https://www.hackerrank.com/challenges/hackerland-radio-transmitters/problem?isFullScreen=true).
