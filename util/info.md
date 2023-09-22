@@ -15,8 +15,8 @@
 
 Текущая оценка = 100 * <набранное количество баллов> / <полное количество баллов>
 
-## Как отправить домашнее задание
-Все домашние задания принимаются только через репозиторий GitHub.
+## Не знаете что такое Git и GitHub?
+Если вы уже знакомы с этими терминами читать эту главу необязательно.
 
 ### Что такое Git?
 Git - это бесплатная программа, которую создал тот же человек,
@@ -95,11 +95,19 @@ Git - это система контроля версий,
 GitHub - это одна из платформ, где вы можете размещать код проекта.
 Для коммуникации с GitHub вы используете Git.
 
-## Пошаговая инструкция
-* Зайти на сайт [GitHub](https://github.com/)
-* Созтать аккаунт GitHub ([подробная инструкция](https://vertex-academy.com/tutorials/ru/kak-zaregistrirovatsya-na-github/)
-* Как создать репозиторий на GitHub([подробная инструкция](https://vertex-academy.com/tutorials/ru/kak-sozdat-repozitorij-na-github/))
-  * можно создать один общий репозиторий для всех домашних, и разделить домашние задания по папкам.
-* Пригласить меня как соавтора в личный репозиторий([подробная инструкция](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository))
-  * Username моего профиля - `Garnik645`
+## Как отправить домашнее задание
+Все домашние задания принимаются только через репозиторий GitHub.
+Можно создать один общий репозиторий для всех домашних, и разделить домашние задания по папкам.
+Репозиторий должен содержать только исходные файлы C++, т.е. файлы .cpp, .h, .hpp и т.д.
+Также оно может содержат файлы **Make** или **CMake**, если вы с ними работайте.
 
+Пошаговая инструкция как сдать домашнее задание:
+* Скачать Git (зависит от операционной системы),
+* Зайти на сайт [GitHub](https://github.com/),
+* Создать аккаунт GitHub ([подробная инструкция](https://vertex-academy.com/tutorials/ru/kak-zaregistrirovatsya-na-github/)),
+* Создать репозиторий на GitHub ([подробная инструкция](https://vertex-academy.com/tutorials/ru/kak-sozdat-repozitorij-na-github/)),
+* Пригласить меня как соавтора в личный репозиторий ([подробная инструкция](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository)),
+  * Username моего профиля - `Garnik645`,
+* Создать новую ветку в репозитории, для этого домашнего задания (можете дать имя ветки например `hw_vector`),
+* Добавить ваше решение в репозиторий на ветке `hw_vector`, в отдельной папке для домашнего задания,
+* Открыть пулл-реквест из вашей ветки `hw_vector` на `main` ветку ([подробная инструкция](https://isqua.ru/blog/2017/04/12/kak-otkryt-pull-riekviest-v-github-i-nie-oblazhatsia/))
