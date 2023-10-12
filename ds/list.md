@@ -25,6 +25,7 @@ public:
     Node *current;
   public:
 
+    iterator();
     iterator(Node *node);
     T &operator*();
     iterator &operator++();
