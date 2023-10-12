@@ -24,10 +24,16 @@ public:
   class iterator {
     Node *current;
   public:
+    using value_type = T;
+    using reference = T&;
+    using pointer = T*;
+    using difference_type = std::ptrdiff_t;
+    using iterator_category = std::bidirectional_iterator_tag;
 
     iterator();
     iterator(Node *node);
-    T &operator*();
+    reference operator*() const;
+    pointer operator->() const;
     iterator &operator++();
     iterator &operator++(int);
     iterator &operator--();
