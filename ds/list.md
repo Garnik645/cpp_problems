@@ -69,6 +69,9 @@ public:
   iterator insert(iterator pos, T &&value);
   iterator insert(iterator pos, std::initializer_list<T> ilist);
 
+  iterator erase(iterator pos);
+  iterator erase(iterator first, iterator last);
+
   void push_front(const T &value);
   void push_front(T &&value);
   void push_back(const T &value);
