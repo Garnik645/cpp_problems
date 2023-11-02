@@ -35,9 +35,9 @@ public:
     reference operator*() const;
     pointer operator->() const;
     iterator &operator++();
-    iterator &operator++(int);
+    iterator operator++(int);
     iterator &operator--();
-    iterator &operator--(int);
+    iterator operator--(int);
     friend bool operator==(iterator lhs, iterator rhs);
     friend bool operator!=(iterator lhs, iterator rhs);
   };
