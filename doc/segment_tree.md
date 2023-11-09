@@ -42,5 +42,18 @@ int main() {
 ```
 
 <table><tr><td>
-<img src="../img/st1.png" alt="Example" title="Example" style="display: inline-block; margin: 0 auto; max-width: 500px; max-height: 500px">
+<img src="../img/st1.png" alt="Example" title="Example" style="display: inline-block; margin: 0 auto; max-width: 600px; max-height: 600px">
+</td></tr></table>
+
+## Задача 2
+Добавить в класс **SegmentTree** следующие рекурсивные функции для обхода дерева,
+которые напечатают значения узлов дерева во время обхода.
+```c++
+void inorder_traversal();
+void post_traversal();
+void preorder_traversal();
+```
+
+<table><tr><td>
+<img src="../img/traversal.png" alt="Example" title="Example" style="display: inline-block; margin: 0 auto; max-width: 600px; max-height: 600px">
 </td></tr></table>
