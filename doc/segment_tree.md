@@ -3,7 +3,7 @@
 ## Задача 1
 
 Дополнить данный код так, чтобы для входного массива
-была создано показанная на картинке дерево отрезков,
+было создано показанное на картинке дерево отрезков,
 где каждый узел дерва хранит сумму элементов своего отрезка.
 
 ```c++
@@ -55,5 +55,18 @@ void preorder_traversal();
 ```
 
 <table><tr><td>
-<img src="../img/traversal.png" alt="Example" title="Example" style="display: inline-block; margin: 0 auto; max-width: 600px; max-height: 600px">
+<img src="../img/traversal.png" alt="Example" title="Example" style="display: inline-block; margin: 0 auto; max-width: 500px; max-height: 500px">
 </td></tr></table>
+
+## Задача 3
+Добавить в класс **SegmentTree** функцию **update**, которая поменяет значение **k**-того элемента массива на **x**,
+(т.е. **a[k] = x;**) и поменяет значения узлов дерева отрезков, которые зависили от **k**-того элемента массива.
+```c++
+void update(size_t k, int x);
+```
+
+## Задача 4
+Добавить в класс **SegmentTree** функцию **getSum**, которая возвращает сумму элементов интервала **[left, right]** .
+```c++
+int getSum(size_t left, size_t right);
+```
