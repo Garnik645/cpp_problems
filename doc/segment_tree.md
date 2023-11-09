@@ -55,7 +55,7 @@ void preorder_traversal();
 ```
 
 <table><tr><td>
-<img src="../img/traversal.png" alt="Example" title="Example" style="display: inline-block; margin: 0 auto; max-width: 500px; max-height: 500px">
+<img src="../img/traversal.png" alt="Example" title="Example" style="display: inline-block; margin: 0 auto; max-width: 350px; max-height: 350px">
 </td></tr></table>
 
 ## Задача 3
