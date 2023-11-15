@@ -59,6 +59,3 @@ std::set<T> setIntersection(const std::set<T> &lhs, const std::set<T> &rhs);
 ```
 5
 ```
-
-### Задача 4
-[тут](https://leetcode.com/problems/merge-similar-items/description/).
