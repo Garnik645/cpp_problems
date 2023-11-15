@@ -31,7 +31,7 @@ CHECK 456
 YES
 NO
 YES
-NO
+YES
 ```
 
 ## Задача 2
