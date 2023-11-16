@@ -113,7 +113,7 @@ public:
   }
 
   ~Trie() {
-    // Also add destructor...
+    // Also add the destructor...
   }
 
   void insert(const std::string &word) {
