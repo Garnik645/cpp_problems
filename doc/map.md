@@ -143,6 +143,3 @@ int main() {
   std::cout << trie.startsWith("Wo") << std::endl;  // Output: true
 }
 ```
-
-## Задача 5
-[тут](https://leetcode.com/problems/my-calendar-i/)
