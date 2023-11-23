@@ -99,6 +99,10 @@ int main() {
   for (auto x : st) {
     std::cout << x << ' ';
   } // Output: -10 0 10 20
+  std::cout << std::endl;
+  
+  auto it = st.find(10);
+  std::cout << *it << std::endl; // Output: 10
   
   assert(st.find(-20) == st.end());
 }
