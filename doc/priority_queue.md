@@ -6,3 +6,4 @@
 * [Remove Stones](https://leetcode.com/problems/remove-stones-to-minimize-the-total/)
 * [K-th Largest](https://leetcode.com/problems/kth-largest-element-in-an-array/)
 * [Closest to Origin](https://leetcode.com/problems/k-closest-points-to-origin/)
+* [Min Effort Path](https://leetcode.com/problems/path-with-minimum-effort/)
