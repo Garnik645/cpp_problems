@@ -1,7 +1,7 @@
 ## Задачи с использованием std::priority_queue
 Все следующие задачи должны быть решены с исползованием **std::priority_queue** из стандартной библиотеки.
 Тут можно посмотреть описание структуры [std::priority_queue](https://en.cppreference.com/w/cpp/container/priority_queue).
-### Решения задачи [K-th Largest element](https://leetcode.com/problems/kth-largest-element-in-an-array/):
+### Решение задачи [K-th Largest element](https://leetcode.com/problems/kth-largest-element-in-an-array/):
 ```c++
 #include <iostream>
 #include <queue>
