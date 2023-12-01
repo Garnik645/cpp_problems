@@ -26,5 +26,3 @@ int findKthLargest(std::vector<int> &nums, int k) {
 ### Список задач:
 * [Seat Reservation](https://leetcode.com/problems/seat-reservation-manager/) (Решить дважды используя **set** и **priority_queue**)
 * [Remove Stones](https://leetcode.com/problems/remove-stones-to-minimize-the-total/)
-* [Closest to Origin](https://leetcode.com/problems/k-closest-points-to-origin/)
-* [Min Effort Path](https://leetcode.com/problems/path-with-minimum-effort/)
