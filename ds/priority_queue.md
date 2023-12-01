@@ -19,14 +19,3 @@ https://leetcode.com/problems/furthest-building-you-can-reach/description/
 
 ### Задача 5
 https://leetcode.com/problems/merge-k-sorted-lists/
-
-## Задачи связанные с обходами матриц (2 балла)
-
-### Задача 1
-https://leetcode.com/problems/map-of-highest-peak/description/
-
-### Задача 2
-https://leetcode.com/problems/path-with-minimum-effort/
-
-### Задача 3
-https://leetcode.com/problems/minimum-obstacle-removal-to-reach-corner/
