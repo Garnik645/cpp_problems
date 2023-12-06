@@ -49,7 +49,7 @@ Explanation: The answer is "wke", with the length of 3.
 Notice that the answer must be a substring, "pwke" is a subsequence and not a substring.
 ```
 
-## Задачи с исползованием Map (2 балл)
+## Задачи с исползованием Map (2 балла)
 Все следующие задачи должны быть решены с исползованием **std::map** из стандартной библиотеки.
 Тут можно посмотреть описание структуры [std::map](https://en.cppreference.com/w/cpp/container/map).
 
