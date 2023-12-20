@@ -1,6 +1,56 @@
 # Lambda
 ```c++
 #include <iostream>
+#include <string>
+
+int main() {
+  // auto lambda_name = [capture_list] (args) -> return_type { body };
+  int k = 5;
+  auto add = [k](int x) -> int { return x + k; };
+  std::cout << add(10) << std::endl;
+  std::cout << add(20) << std::endl;
+
+  // args and return_type are emitted
+  auto simple_hello = [] {
+    std::cout << "Hello, World!\n";
+  };
+  simple_hello();
+
+  // Passing arguments to lamda
+  auto name_hello = [](const std::string &name) {
+    std::cout << "Hello, " + name + "!\n";
+  };
+  name_hello("World");
+
+  // Specifying return value is not necessary
+  auto get_hello = [](const std::string &name) -> std::string {
+    return "Hello, " + name + "!\n";
+  };
+  std::cout << get_hello("World");
+
+  // Using capture list
+  // [world], [&], [=] also can be used
+  std::string world = "World";
+  auto use_world = [&world]() {
+    std::cout << "Hello, " + world << std::endl;
+  };
+  use_world();
+  use_world();
+
+  // Mutable
+  auto mutable_hello = [world]() mutable {
+    world += "!";
+    std::cout << "Hello, " + world << std::endl;
+  };
+  mutable_hello();
+  mutable_hello();
+  mutable_hello();
+}
+```
+
+
+```c++
+#include <iostream>
 #include <vector>
 #include <algorithm>
 #include <cmath>
