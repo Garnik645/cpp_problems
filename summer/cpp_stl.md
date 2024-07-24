@@ -1,6 +1,6 @@
 # C++ and STL
 
-Please complete the following tasks to ensure have a strong foundation in C++ programming.
+Please complete the following tasks to ensure you have a strong foundation in C++ programming.
 This course contains 3 tasks, you're given 3 weeks for completing all of them.
 
 ## Task 1: Reading Assignment
@@ -45,25 +45,23 @@ Add examples of usage for your `bitset` class.
 
 When project is finished, create a pull request from `develop` branch to `main`.
 
-## Task 3: Advanced C++ Topics Presentation
+## Task 3: C++ Topics Presentation
 
 Choose one group of topics from the list below (agree on the topic with your supervisor), learn about them, prepare a 20 to 30 minute presentation, and present the slides to the team.
 
-### Group 1: Smart Pointers and Casts in C++
+### Group 1: Smart Pointers and Placement New
 
 - **Smart Pointers**: What is RAII? Why are smart pointers used and when should you use them?
-- **Casts in C++**: Why is C-style cast bad? What types of casts are in C++ and when are they used?
+- **Placement New**: What is placement new and how do you implement a vector container with it?
 
 ### Group 2: Lvalue/Rvalue References, Universal References, and Variadic Templates
 
 - **Lvalue/Rvalue References and Universal References**: What are these and why are they used?
 - **Variadic Templates**: What are these and why are they used?
-- **`emplace_back`**: What is `emplace_back` and when should you use it instead of `push_back`?
 - **Perfect Forwarding**: What is perfect forwarding?
+- **`emplace_back`**: What is `emplace_back` and when should you use it instead of `push_back`?
 
-### Group 3: Placement New and Compile-Time Programming
+### Group 3: Casts and Compile-Time Programming
 
-- **Placement New**: What is placement new and how do you implement a vector container with it?
-- **Compile-Time Programming**:
-    - `constexpr` and `consteval` functions: What are these?
-    - `constexpr if` condition: What is this?
+- **Casts in C++**: Why is C-style cast bad? What types of casts are in C++ and when are they used?
+- **Compile-Time Programming**: What are `constexpr`, `consteval` and  `constinit`?
