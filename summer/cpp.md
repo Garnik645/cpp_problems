@@ -2,8 +2,8 @@
 
 Please complete the following tasks to ensure you have a strong foundation in C++ programming.
 This course contains 3 tasks.
-You're given 2 weeks to complete all of them, so the deadline is **August 18 23:59**
-Please note that the deadline for the presentation is **August 15th**.
+You're given around 2 weeks to complete all of them, so the deadline is **August 18 23:59**.
+Please note that the deadline for the task 3 presentation is **August 15th**.
 
 ## Task 1: Reading Assignment
 
@@ -55,15 +55,24 @@ Choose one group of topics from the list below, agree on the topic with your sup
 You can present the slides between August 12 and 15.
 In your presentation talk about what those topics are, why are they important in C++, how they are used, present code examples, etc.
 
-### Topic 1: RAII, Smart Pointers and Placement New
+### Topic 1: RAII & Error handling
 
 - **RAII**
+- **Error handling in C and C++**: How is it done and what are the differences?
 - **Smart Pointers**: What type of pointers are there, when are they used and how?
-- **Placement New**: What is placement new and how do you implement a vector container with it?
+- **Handling errors without exceptions**: std::optional, std::variant.
 
-### Topic 2: Lvalue/Rvalue References, Universal References, and std::move/std::forward
+### Topic 2: Value Categories & Move Semantics
 
 - **Lvalue/Rvalue References**: What's the difference between Lvalues and Rvalues?
-- **Universal References** ([link](https://isocpp.org/blog/2012/11/universal-references-in-c11-scott-meyers))
-- **std::move/std::forward**
+- **Universal References**: Why are they used? ([link](https://isocpp.org/blog/2012/11/universal-references-in-c11-scott-meyers))
+- **Move Semantics**: std::move.
+- **Perfect Forwarding**: std::forward.
 - **emplace_back**: What is `emplace_back` and when should you use it instead of `push_back`?
+
+### Topic 3: Polymorphism & Casting
+
+- **Static and Dynamic Polymorphism**: How is it done and what are the differences?
+- **Virtual Destructors**: When do you need them?
+- **Liskov Substitution Principle**
+- **Casting**: dynamic_cast, static_cast, reinterpret_cast.
