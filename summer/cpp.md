@@ -59,7 +59,7 @@ In your presentation talk about what those topics are, why are they important in
 
 - **RAII**
 - **Error handling in C and C++**: How is it done and what are the differences?
-- **Smart Pointers**: What type of pointers are there, when are they used and how?
+- **Smart Pointers**: What type of smart pointers are there, when are they used and how?
 - **Handling errors without exceptions**: std::optional, std::variant.
 
 ### Topic 2: Value Categories & Move Semantics
