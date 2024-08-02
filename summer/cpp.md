@@ -2,7 +2,7 @@
 
 Please complete the following tasks to ensure you have a strong foundation in C++ programming.
 This course contains 3 tasks.
-You're given around 2 weeks to complete all of them, so the deadline is **August 18 23:59**.
+You're given around 2 weeks to complete all of them, so The deadline is **August 18 at 11:59 PM**.
 Please note that the deadline for the task 3 presentation is **August 15th**.
 
 ## Task 1: Reading Assignment
