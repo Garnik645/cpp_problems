@@ -70,7 +70,7 @@ void update(size_t k, int x);
 ```
 
 ## Задача 4
-Добавить в класс **SegmentTree** функцию **getSum**, которая возвращает сумму элементов интервала **[left, right]**.
+Добавить в класс **SegmentTree** функцию **getMin**, которая возвращает минимум элементов интервала **[left, right]**.
 ```c++
 int getMin(size_t left, size_t right);
 ```
